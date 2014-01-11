@@ -42,7 +42,7 @@ enyo.kind({
           ]}
         ]},
         { kind: "onyx.Groupbox", components: [
-          { kind: "onyx.GroupboxHeader", content: "Enigma encoding result" },
+          { kind: "onyx.GroupboxHeader", content: "Enigma encryption result" },
           { name: "encryptingResult", content: "No result yet", style: "padding: 8px;" }
         ]}
       ]}
