@@ -7,6 +7,3 @@
 [submodule "enyo/framework/lib/onyx"]
 	path = enyo/framework/lib/onyx
 	url = https://github.com/enyojs/onyx.git
-[submodule "enyo/enigma/lib/enigma"]
-	path = enyo/enigma/lib/enigma
-	url = https://github.com/DimitrK/enigma.git
