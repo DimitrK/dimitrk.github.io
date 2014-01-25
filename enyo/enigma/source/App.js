@@ -42,7 +42,7 @@ enyo.kind({
           ]}
         ]},
         { kind: "onyx.Groupbox", components: [
-          { kind: "onyx.GroupboxHeader", content: "Enigma encryption result" },
+          { kind: "onyx.GroupboxHeader", content: "Enigma encryption result (hex)" },
           { name: "encryptingResult", content: "No result yet", style: "padding: 8px;" }
         ]}
       ]}
@@ -75,6 +75,6 @@ enyo.kind({
       "RMD160": enigma.rmd160.hash,
       "MD5": enigma.md5.hash
     };
-    this.$.encryptingResult.setContent(choiceMap[inSender.selected.getContent()].call(undefined,this.$.encryptText.getValue()).value);
+    this.$.encryptingResult.setContent(choiceMap[inSender.selected.getContent()].call(undefined,this.$.encryptText.getValue()).toHex());
   }
 });
