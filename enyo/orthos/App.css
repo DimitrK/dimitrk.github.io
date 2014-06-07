@@ -1,0 +1,11 @@
+iframe {
+  width:100%;
+  height:110%;
+  z-index:1;
+}
+.centered {
+    text-align: center;
+}
+.full-row {
+    width: 100%;
+}
