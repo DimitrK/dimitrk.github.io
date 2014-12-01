@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <style type="text/css">
+            
+            body {
+                width: 100%;
+                font-family: arial;
+            }
+            
+            hr {
+                border: 0;
+                height: 2px;
+                margin:18px 0;
+                position:relative;
+                background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(84, 75, 71, 1) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(84, 75, 71, 1)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(84, 75, 71, 1)  50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(84, 75, 71, 1)  50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(84, 75, 71, 1)  50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+                background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(84, 75, 71, 1)  50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#544B47',GradientType=1 ); /* IE6-9 */
+            }
+
+            hr:before {
+                content: "";
+                display: block;
+                border-top: solid 1px #f9f9f9;
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                top: 50%;
+                z-index: 1;
+            }
+
+            
+            .container {
+                padding: 5%;
+            }
+            
+            .member {
+                padding: 5% 0;
+                display: table;
+            }
+            
+            .member > * {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            
+            .avatar-image {
+                width: 100%;
+                padding-bottom: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 100%;
+            }
+            
+            .avatar-holder {
+                width: 15%;
+                min-width: 150px;
+            }
+            
+            .description {
+                max-width: 80%;
+                padding-left: 4%;
+                font-size: 1.1em;
+                color: rgb(73, 73, 73);
+                text-align: justify;
+            }
+            
+            
+            #katem {
+                background-image: url(./assets/katem.jpg);
+            }
+            
+            #beatar {
+                background-image: url(./assets/beatar.jpg);
+            }
+            
+            @media only screen and (max-width:749px) {
+                .container {
+                    padding: 5% 0;
+                }                
+                .member {
+                    display: block;
+                }
+                .member > * {
+                    display: block;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding-top: 10%;
+                }
+                
+            }
+            
+            @media only screen and (max-width:449px) {
+                .description {
+                    font-size: 1em;
+                }                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="member">
+                <div class="avatar-holder">
+                    <div id="beatar" class="avatar-image"></div>
+                </div>
+                <p class="description">
+                    Jestem coachem, neurologopedą, terapeutą SI Praca z ludźmi to moja pasja. Coaching uświadomił mi, że mogę pomagać innym na  jeszcze innej płaszczyźnie towarzysząc drugiej osobie w drodze do zmian ku lepszemu życiu.
+                </p>
+            </div>
+            <hr/>
+            <div class="member">
+                <div class="avatar-holder">
+                    <div id="katem" class="avatar-image"></div>
+                </div>
+                <p class="description">
+                    Jestem psychologiem i life coachem. Ludzie są dla mnie inspiracją i siłą napędową. Kocham swoją prace. Nic nie sprawia mi wiekszej radości niż towarzyszenie innym w zmianach i urzeczywistnianiu marzeń. Moją misją jest pomoc ludziom w odkryciu własnego potencjału. 
+Zajmuje się również związkami między emocjami, myślą i ciałem.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
